@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+   <style>
+   #container{
+      margin:0 auto;
+      width:650px;
+      height:600px;
+      border:1px solid red;
+   }
+   
+   .c1{width:179px; height:150px; margin:15px;}
+   .c2{width:179px; height:323px; margin:15px;}
+   #left_top{float:left;}
+   #left_under{float:left;}
+   #right{display:flex;}
+   #under{float:left;}
+      #d1{border:1px solid gray;float:left;}
+      #d2{border:1px solid gray;float:left;}
+      #d3{border:1px solid gray;float:left;}
+      #d4{border:1px solid gray;float:left;}
+      #d5{border:1px solid gray;float:left;}
+      #d6{border:1px solid gray;float:left; font-size: 14;font-weight: bold;}
+      #d7{border:1px solid gray;float:left;}
+      #d8{border:1px solid gray;float:left;}
+   </style>
+</head>
+<body>
+<div id ="container">
+   <div id = "left_top">
+      <div id="d1" class="c1"></div>
+      <div id="d2" class="c1"></div>
+   </div>
+   <div id= "left_under">
+   	  <div id="d3" class="c1"></div>
+      <div id="d4" class="c1"></div>
+   </div>
+   <div id = "right">
+      <div id="d5" class="c2"><img src="./tab2_1.png"/></div>
+   </div>
+   <div id= "under">
+	   <div id="d6" class="c1"><img src="./tab2_2.png"/>견과류의 하루 적정 섭취량</div>
+	   <div id="d7" class="c1"><img src="./tab2_3.png"/>날벌레가 빛에 몰려드는 이유</div>
+	   <div id="d8" class="c1"><img src="./tab2_4.png"/>냉면의 유래와 역사</div> 
+   </div>
+
+</div>
+</body>
+</html>

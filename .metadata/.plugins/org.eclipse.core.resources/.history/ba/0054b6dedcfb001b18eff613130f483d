@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body{margin:0}
+	
+	.layout{
+		width:1200px;
+		height:100px;
+		margin:0px auto;
+	}
+	#top{
+		background-color:#ddd;
+	}
+	#menu{
+		background-color:lightblue;
+	}
+	#menu>div{
+		
+	}
+</style>
+</head>
+<body>
+<div id="top" class="layout></div>
+<div id="menu">
+	<div class="layout">asd</div>
+</div>
+</body>
+</html>

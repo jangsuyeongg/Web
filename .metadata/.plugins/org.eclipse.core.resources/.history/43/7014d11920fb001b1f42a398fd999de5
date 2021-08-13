@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<style>
+	
+		div {
+			width: 200px;
+			height: 200px;
+		}
+		
+		#d1 {
+			background: pink;
+			left: 100px;
+		}
+
+		#d2 {
+			background: powderblue;
+			position: relative;
+			top: 100px;
+			left: 100px;
+		}
+		
+		#d3 {
+			background: yellow;
+			position: absolute;
+			top: 200px;
+			left: 200px;
+		}			
+	
+		#d4 {
+			background: green;
+		}
+	
+		#i1 {
+			position: absolute;
+			left: 300px;
+			top: 300px;
+		}
+		
+		/*
+			static: 기본값
+			relative: 좌표의 기준이 현재 위치(부모 기준)
+			absolute: 좌표의 기준이 body, 자기 공간을 반납함
+			top, bottom, left, right: 좌표 설정
+			z-index: 엘리먼트가 겹쳤을 때 값이 클수록 화면 앞으로 나온다.
+		*/
+	
+
+	
+	
+	</style>
+
+</head>
+<body>
+
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+	<div id="d4"><img src="../img/cool_cat.jpg" width="75px" id="i1" /></div>
+</body>
+</html>

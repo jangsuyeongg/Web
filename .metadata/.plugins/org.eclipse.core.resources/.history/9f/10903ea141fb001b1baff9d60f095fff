@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<style>
+		/* 자식 선택자: 한 세대 아래의 자손만 선택???????????????????? */
+	
+		body > ul {
+			color: red;
+		}
+		
+		div > ul {
+			color: green;
+		}
+		
+		/* 자손 선택자: 모든 자손중에서 선택  */
+		div li {
+			background-color: pink;
+		}
+		body b {
+			font-size: 2em;
+		}
+		
+		/* 반응 선택자 */
+		ul>li:hover {
+			background-color: grey;
+		}
+		li:active {
+			color: cyan;	
+		}
+	
+	</style>
+
+</head>
+<body>
+
+	<div>
+		<ul>
+			<li>1st</li>
+			<li>2nd</li>
+			<li>3rd</li>
+		</ul>
+	</div>
+
+	
+	<div>
+		<p>문단을<b>정의</b>하는 태그</p>		
+	</div>
+
+
+	<ul>
+		<li>A</li>
+		<li>B</li>
+		<li>C</li>
+	</ul>
+	
+
+</body>
+</html>

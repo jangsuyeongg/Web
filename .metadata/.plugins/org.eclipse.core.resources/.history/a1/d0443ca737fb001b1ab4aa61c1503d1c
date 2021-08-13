@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<style>
+		div {
+			width: 300px;
+			height: 100px;
+		}
+		/* visibility: hidden or visible, hidden을 설정하면 보이지 않게 되지만 자리는 여전히 차지하고 있음 */
+		div:nth-of-type(1) {
+			background-color: yellow;
+			visibility: hidden;
+		}
+		div:nth-of-type(2) {
+			background-color: pink;
+		}
+		/* display: block or none, none으로 숨기면 아예 자리에서 사라짐 */
+		div:nth-of-type(3) {
+			background-color: lightblue;
+			display: none;
+		}
+		/* 높이를 0으로 만들어서 숨기기 */
+		img {
+			height:0px;
+		}
+		
+	</style>
+
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<img src="../img/kakao5.png" width="300px"/>
+</body>
+</html>

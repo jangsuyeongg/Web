@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<style>
+		
+		div {
+			font-size: 3em;
+			width: 400px;
+			height: 80px;
+			margin: 20px;
+			border: 1px solid grey;
+			line-height: 80px;
+			text-align: center;
+		}
+		
+		img {
+			margin: 20px;
+			width: 400px;
+		}
+		/* 그림자의 오른쪽 길이, 그림자의 왼쪽 길이, 투명도, 색깔 지정*/
+		/* 글자에 그림자 넣기 */
+		div:first-of-type {
+			text-shadow: 10px 10px 5px grey;
+		}
+		/* 박스에 그림자 넣기 */
+		div:last-of-type, img {
+			box-shadow: -5px -5px 5px green;
+		}
+		/* 그라데이션은 https://www.colorzilla.com/gradient-editor/에서 받아오렴! */
+		div:nth-child(2) {
+			font-size: 2em;
+			/* 복붙 */
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+			background: #a90329; /* Old browsers */
+			background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */			
+		}
+		
+	</style>
+
+</head>
+<body>
+	<div id="txt1">
+		text shadow
+	</div>
+	<div id="txt2">
+		box shadow
+	</div>
+	<img src="../img/cool_cat.jpg" />
+</body>
+</html>

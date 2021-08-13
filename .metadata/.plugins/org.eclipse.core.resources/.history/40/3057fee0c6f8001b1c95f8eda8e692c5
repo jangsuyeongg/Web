@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼태그</title>
+<style>
+	textarea{width:500px;height:200px;}
+</style>
+</head>
+<body>
+<!-- 
+	method 속성 : 데이터 전송방식
+		get: 주소표시줄에 변수와 데이터가 표시된다.
+		post : 데이터를 숨겨서 서버로 가져간다.
+ -->
+<form method="post" action="aaaa.jsp">
+	<!-- 한줄의 문자열을 입력하는 컴포넌트 : 이름, 아이디, 주소, 주민번호, 전화번호, 이메일, 글제목... -->
+	<!-- readonly= 읽기전용   disabled = 비활성화-->
+	<label>아 이디</label> : <input type="text" name="userid" id="userid" value="suyeong0804" maxlength="10" placeholder="아이디입력" disabled/><br/>
+	<label>이   름</label> : <input type="text" name="username" id="username"/><br/>
+	<label>비밀번호</label> : <input type="password" name="userpwd" id="userpwd"/><br/>
+	<label>파일첨부</label> : <input type="file" name="filename" id="filename"/><br/> 
+	<label>관심분야</label> : <input type="checkbox" name="intro" value="배구"/> 배구
+	 						<input type="checkbox" name="intro" value="농구" checked/> 농구
+	 						<input type="checkbox" name="intro" value="축구"/> 축구<br/>
+	<label>성별</label> : <input type="radio" name="gender" value="M" checked/> 남자
+						 <input type="radio" name="gender" value="F"/> 여자<br/>
+	<h2>여러줄의 텍스트를 입력하는 박스</h2>
+	자기소개 : <textarea name="txt">글내용을 입력하는 곳</textarea><br/>
+	<!--  select,option,optgroup 태그 -->
+	콤보박스 : <select name="comList">
+				<option value="javascript">자바스크립트</option>
+				<option value="html">HTML</option>
+				<option value="css" selected>스타일시트</option>
+				<option value="spring">스프링</option>
+				<option value="java">자바</option>
+			</select><br/>
+	리스트group : <select name="comList2" size="5" multiple>
+				<optgroup label="프론트엔드">
+					<option value="javascript">자바스크립트</option>
+					<option value="html">HTML</option>
+				</optgroup>	
+				<optgroup label="백엔드">
+					<option value="css">스타일시트</option>
+					<option value="spring">스프링</option>
+					<option value="java">자바</option>
+				</optgroup>	
+			</select><br/>		
+			
+	<!--  -->
+	<input type="submit" value="등록"/>
+	<input type="button" value="등록"/>
+	<input type="image" src="../img/kakao4.png" width="20%"/>
+	<input type="reset" value="다시쓰기"/>
+	
+</form>
+</body>
+</html>

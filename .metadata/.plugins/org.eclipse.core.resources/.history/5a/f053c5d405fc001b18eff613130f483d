@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<ul>
+	<li id="first">첫번째</li>
+	<li>두번째</li>
+</ul>
+<img src="../img/kakao5.png" id="li"/>
+
+<script>
+	//자바스크립에서 스타일시트 적용하기
+	document.getElementById("first")
+
+</script>
+
+</body>
+</html>
