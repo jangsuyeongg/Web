@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body{
+		background-color:rgb(25, 161, 173);
+		overflow: hidden;
+	}
+	ul, li{
+		margin:0;
+		padding:0;
+		list-style-type:none;
+		}
+	
+	#main{
+		width:300px;
+		height:330px;
+		background-color:white;
+		margin:0 auto;
+		border-radius: 20px;
+		margin-top:300px;
+		overflow: hidden;
+		z-index: 10;
+		position: relative
+	}
+	#main>img:first-of-type{
+		margin-left:100px;
+		border-radius: 100%;
+		
+	}
+	#main>#bg-pattern-card{
+		width:300px;
+		height:90px;
+	}
+	#name{
+		text-align: center;
+	}
+	.gray{
+		color:gray;
+	}
+	#line{
+		width:300px;
+		height:100px;
+		border:1px solid #ddd;
+	}
+	li{
+		text-align:center;
+		margin:30px;
+		float:left;
+	}
+	#bg-pattern-top>img{
+		left: -200px; 
+		top: -200px;
+		position:absolute;
+		
+	}
+	#bg-pattern-bottom>img{
+		right: -200px; 
+		bottom: -200px;
+		position:absolute;
+		z-index: 0;
+	}
+
+</style>
+</head>
+<body>
+<div id="bg-pattern-top">
+	 <img src = "bg-pattern-top.svg" >
+</div>
+<div id="bg-pattern-bottom">
+	 <img src = "bg-pattern-bottom.svg" >
+</div>
+<div id="main">
+		<div id ="bg-pattern-card"><img src = "bg-pattern-card.svg"/></div>
+		<img src ="victor.jpg"/>
+		<div id ="name"><b>Victor Crest</b> <span class="gray"><b>26</b></span> <br/>
+                           <span class="gray" style = font-size:0.8em;>London</span></div>                 
+		<div id = "line">
+			<div id = "k">
+				<ul>
+					<li><b>80K</b><br/><span class="gray" style = font-size:0.6em;><b>Followers</b></span></li>
+					<li><b>803K</b><br/><span class="gray" style = font-size:0.6em;><b>Likes</b></span></li>
+					<li><b>1.4K</b><br/><span class="gray" style = font-size:0.6em;><b>Photos</b></span></li>
+				</ul>
+			</div>
+		</div>
+	
+</div>
+</body>
+</html>

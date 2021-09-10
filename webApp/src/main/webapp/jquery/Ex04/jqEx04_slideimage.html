@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+   #banner img{width:500px; height:400px;}
+   #banner{width:500px; height:400px; margin:0 auto; border:1px solid gray; position:relative;overflow:hidden;}
+   
+   /*이미지 목록*/
+   #bannerImg{width:3000px;}
+   
+   /*설명서*/
+   #slideTxt{position:absolute; left:-430px; top:100px; width:400px; height:250px; border:1px solid red; color:blue;}
+   
+   #slideTxt>div{position:absolute; left:0px; top:0px;  width:400px; height:250px;}
+
+	/*컨트롤러*/
+	#controll{position:absolute;left:100px;top:350px;}
+	#controll>div{background-image:url(point_button.png);width:15px; height:15px;float:left;margin:0 15px;}
+	
+</style>
+
+<script>
+	function slideImage(i){
+		//이미지
+		$("#bannerImg").animate({marginLeft: -(i*500)+"px"},2000);
+		//설명
+		$("#slideTxt>div").animate({marginLeft:"0px"},0);
+		$("#slideTxt>div").eq(i).delay(1000).animate({marginLeft:'500px'},2000);
+		//컨트롤러
+		$("#controll>div").css("background-position",'0px 0px');
+		$("#controll>div").eq(i).css('background-position','0px -30px')
+	
+	}
+	$(()=>{
+		var imgName =['kakao6.png','kakao7.png','kakao8.png','kakao9.png','kakao5.png','kakao4.png'];
+		var imgTag = "";
+	      
+	      imgName.map(function(value,idx){
+	         imgTag+="<img src='../../img/"+value+"'/>";
+	      });
+	      $('#bannerImg').append(imgTag);
+	    //처음에 슬라이드 되기 위한 난수 생성 0~5 정수(난수(큰-작은+1))+작은
+	    var idx = parseInt(Math.random()*6);
+	    $("#view").html(idx);
+	    
+	    slideImage(idx);
+	    ////////////////////////////////
+	    $('#controll>div').click(function(){
+	    	slideImage($("#controll>div").index(this));
+	    });
+	    
+	});
+	
+	
+</script>
+
+</head>
+<body>
+<div id="view"></div>
+<div id="banner">
+	<div id="bannerImg"></div>
+	<div id="slideTxt">
+		<div>
+			<h1>첫번째 이미지</h1>
+			<h2>첫번째 설명</h2>
+			<p>26일 오전 9시 40분쯤 서울 관악구 봉천동 사랑의병원. 병원 앞엔 대형 부스 두 개가 설치됐다. 왼쪽엔 아스트라제네카(AZ), 오른쪽엔 화이자 백신 접종자를 위한 예진 부스였다. 병원 1층 로비엔 접종을 기다리는 시민 수십명과 진료를 기다리는 환자들이 모여 다소 북적이는 모습이었다. </p>
+		</div>
+		<div>
+			<h1>두번째 이미지</h1>
+			<h2>두번째 설명</h2>
+			<p>26일 오전 9시 40분쯤 서울 관악구 봉천동 사랑의병원. 병원 앞엔 대형 부스 두 개가 설치됐다. 왼쪽엔 아스트라제네카(AZ), 오른쪽엔 화이자 백신 접종자를 위한 예진 부스였다. 병원 1층 로비엔 접종을 기다리는 시민 수십명과 진료를 기다리는 환자들이 모여 다소 북적이는 모습이었다. </p>
+		</div>
+		<div>
+			<h1>세번째 이미지</h1>
+			<h2>세번째 설명</h2>
+			<p>26일 오전 9시 40분쯤 서울 관악구 봉천동 사랑의병원. 병원 앞엔 대형 부스 두 개가 설치됐다. 왼쪽엔 아스트라제네카(AZ), 오른쪽엔 화이자 백신 접종자를 위한 예진 부스였다. 병원 1층 로비엔 접종을 기다리는 시민 수십명과 진료를 기다리는 환자들이 모여 다소 북적이는 모습이었다. </p>
+		</div>
+		<div>
+			<h1>네번째 이미지</h1>
+			<h2>네번째 설명</h2>
+			<p>26일 오전 9시 40분쯤 서울 관악구 봉천동 사랑의병원. 병원 앞엔 대형 부스 두 개가 설치됐다. 왼쪽엔 아스트라제네카(AZ), 오른쪽엔 화이자 백신 접종자를 위한 예진 부스였다. 병원 1층 로비엔 접종을 기다리는 시민 수십명과 진료를 기다리는 환자들이 모여 다소 북적이는 모습이었다. </p>
+		</div>
+		<div>
+			<h1>다섯번째 이미지</h1>
+			<h2>다섯번째 설명</h2>
+			<p>26일 오전 9시 40분쯤 서울 관악구 봉천동 사랑의병원. 병원 앞엔 대형 부스 두 개가 설치됐다. 왼쪽엔 아스트라제네카(AZ), 오른쪽엔 화이자 백신 접종자를 위한 예진 부스였다. 병원 1층 로비엔 접종을 기다리는 시민 수십명과 진료를 기다리는 환자들이 모여 다소 북적이는 모습이었다. </p>
+		</div>
+		<div>
+			<h1>여섯번째 이미지</h1>
+			<h2>여섯번째 설명</h2>
+			<p>26일 오전 9시 40분쯤 서울 관악구 봉천동 사랑의병원. 병원 앞엔 대형 부스 두 개가 설치됐다. 왼쪽엔 아스트라제네카(AZ), 오른쪽엔 화이자 백신 접종자를 위한 예진 부스였다. 병원 1층 로비엔 접종을 기다리는 시민 수십명과 진료를 기다리는 환자들이 모여 다소 북적이는 모습이었다. </p>
+			</div>
+		</div>
+<!-- controller -->
+   <div id="controll">
+      <div></div><div></div><div></div><div></div><div></div><div></div>
+   </div>
+   <p>
+</div>
+</body>
+</html>

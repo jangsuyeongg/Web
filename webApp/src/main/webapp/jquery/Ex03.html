@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+	ul,li{
+		margin:0;
+		padding:0;
+		list-style-type:none;
+	}
+	#container{
+		width:900px;
+		margin:0 auto;
+		margin-top:80px;
+	}
+	header{
+		height:120px;
+		border-bottom:3px solid #ddd;
+		text-align:center;
+		font-size:3em;
+	}
+	img{
+		width:900px;
+		position:absolute;
+		top:275px;
+		left:404px;
+		z-index: -1;
+	}
+	.menu{
+		float:left;
+		text-align:center;
+		
+	}
+	#OUTER,#TOP,#DRESS,#BOTTOM,#SUMMER{
+		margin-top:20px;
+		width:180px;
+		height:40px;
+	}
+	ul{
+		background-color:#fff;
+		border:1px solid #ddd;
+		line-height:40px;
+		display:none;
+	}
+</style>
+<script>
+	$(()=>{
+		  $('.menu').on({
+			mouseenter:function(){
+				$(this).children().last().css('display','block');
+				console.log(this);
+			},mouseleave:function(){
+				$(this).children().last().css('display','none');
+			}
+		  });
+	});
+	
+</script>
+</head>
+<body>
+<div id="container">
+	<header>GIRLSDAILY</header>
+	
+		<div class="menu">
+		<div id="OUTER">OUTER</div>
+		<ul>
+			<li>가디건</li>
+			<li>자켓 & 점퍼</li>
+			<li>베스트</li>
+			<li>코트</li>
+			<li>세일</li>
+		</ul>
+		</div>
+		<div class="menu">
+		<div id="TOP">TOP</div>
+		<ul>
+			<li>Tee</li>
+			<li>Cami</li>
+			<li>Knit</li>
+			<li>Shirt & Blouse</li>
+		</ul>
+		</div>
+		<div class="menu">
+		<div id="DRESS">DRESS</div>
+		<ul>
+			<li>All</li>
+			<li>바캉스룩</li>
+			<li>Set</li>
+		</ul>
+		</div>
+		<div class="menu">
+		<div id="BOTTOM">BOTTOM</div>
+		<ul>
+			<li>레깅스</li>
+			<li>힐링투엘브</li>
+			<li>히든벤딩시리즈</li>
+			<li>스커트</li>
+			<li>팬츠</li>
+		</ul>
+		</div>
+		<div class="menu">
+		<div id="SUMMER">SUMMER</div>
+		<ul>
+			<li>HOLI스윕웨어</li>
+			<li>at 22</li>
+			<li>베바캉스룩스트</li>
+		</ul>
+		</div>
+	</div>
+	<div><img src="../img/kakao6.png"/></div>
+
+</body>
+</html>

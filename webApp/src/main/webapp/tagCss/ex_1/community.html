@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body{
+		background-color:rgb(230, 239, 246);
+	}
+	ul, li{
+		margin:0;
+		padding:0;
+		list-style-type:none;
+		margin-left:15px;
+		margin-top:25px;
+	}
+	#main{
+		width:600px;
+		height:420px;
+		background-color:white;
+		margin:0 auto;
+		border-radius: 5px;
+		margin-top:300px;
+		overflow: hidden;
+		z-index: 10;
+		position: relative
+	}
+	#main{
+		box-shadow: 5px 5px 5px grey;
+	}
+	#left{
+		width:300px;
+		height:250px;
+		margin-top:30px;
+		background-color:rgb(41, 179, 182);
+		float:left;
+	}
+	#right{
+		width:300px;
+		height:250px;
+		margin-top:30px;
+		background-color:rgb(74, 190, 189);
+		float:left;
+	}
+	#a{
+		color:rgb(41, 179, 182);
+		font-size:1.3em;
+	}
+	#b{
+		color:rgb(191, 223, 50);
+		margin-bottom:0;
+	}
+	#c{
+		color:rgb(150, 147, 147);
+		font-size:0.8em;
+	}
+	#community>ul>li:nth-of-type(3){
+		margin-top:5px;
+	}
+	li{
+		color: white;	
+	}
+	#left>ul>li:nth-of-type(4){
+		width:240px;
+		height:50px;
+		background-color:rgb(191, 223, 50);
+		border-radius : 5px;
+		text-align: center;
+		line-height:50px;
+	}
+	#left>ul>li{
+		margin-top:10px;
+	}
+
+</style>
+</head>
+<body>
+<div id="main">
+	<div id="community">
+		<ul>
+			<li><span id=a><b>Join our community</b></span></li>
+			<li><span id=b><b>30-day, hassle-free money back guarantee</b></span></li>
+			<li><span id=c>Gain access to our full library of tutorials along with expert code reviews.<br/>
+						   Perfect for any developers who are serious about honing their skills.<br/></span></li>
+		</ul>
+	</div>
+	<div id="subscription">
+		<div id="left">
+			<ul>
+				<li><b>Monthly Subscription</b></li>
+				<li><span id=d  style = font-size:2em;><b>$29</b></span> per month</li>
+				<li> Full access for less than $1 a day</li><br/>
+				<li><b>Sign up</b></li>
+			</ul>
+
+		</div>
+		<div id="right">
+			<ul>
+				<li><b>why us</b></li>
+				<li>Tutorials by industry experts<br/>
+					Pear & expert code review<br/>
+					Coding exercises<br/>
+					Access to our GitHub repos<br/>
+					Community forum<br/>
+					Flashcard decks<br/>
+					New videos every week<br/>
+					
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

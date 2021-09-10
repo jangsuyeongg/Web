@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=webMVC/src\/main\/java&lt;com.bitcamp.home{DBConnection.java[DBConnection" modifiers="1" timestamp="1631157108258"/>
+    <typeInfo handle="=webMVC/src\/main\/java&lt;com.bitcamp.home{CommandService.java[CommandService" modifiers="513" timestamp="1630996328276"/>
+</typeInfoHistroy>

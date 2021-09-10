@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+    	margin:0;
+    }
+    ul,li{
+		margin:0;
+		padding:0;
+		list-style-type:none;
+	}
+    header{
+    	width:1400px;
+    	height:500px;
+    	background-color:#FE866E;
+    	margin: 0px auto;
+    	padding:0;
+    	border-bottom-left-radius: 100px;
+    	overflow:hidden;
+    	z-index: 10;
+    	color:#fff;
+    	display:flex;
+    	position: relative
+    	
+    }
+    #Blogr{
+    	margin-left:100px;
+    	color:#fff;
+    	font-size:2em;
+    	margin-top:30px;
+    }
+    #bg-pattern-intro>img{
+		right: -1200px; 
+		bottom: -1400px;
+		position:absolute;
+		z-index: 0;
+		}
+	#Login, #SignUp{
+		z-index: 1;
+		
+	}	
+	#Login{
+		margin-left:500px;
+		margin-top:40px;
+		font-weight:bold;
+	}
+	#SignUp{
+		margin-top:30px;
+		width:130px;
+		height:40px;
+		border-radius:50px;
+		background-color:#fff;
+		color:#FF4F5A;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight:bold;
+		margin-left:30px;
+	}
+	#SignUp:hover {
+		cursor: pointer;
+		}
+	p:first-of-type{
+		z-index: 10;
+		position:absolute;
+		margin-left:350px;
+		top:150px;
+		font-size:3em;
+	}
+	p:last-of-type{
+		z-index: 10;
+		position:absolute;
+		text-align:center;
+		margin-left:500px;
+		top:250px;
+	}
+	#Start{
+		width:130px;
+		height:40px;
+		border-radius:50px;
+		background-color:#fff;
+		color:#FF4F5A;
+		font-weight:bold;
+		z-index: 11;
+		position:absolute;
+		margin-top:300px;
+		text-align:center;
+		margin-left:550px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+}
+	#Learn{
+		width:128px;
+		height:38px;
+		border-radius:50px;
+		border:1px solid #fff;
+		color:#FFF;
+		font-weight:bold;
+		z-index: 11;
+		position:absolute;
+		margin-top:300px;
+		text-align:center;
+		margin-left:700px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	ul{
+		background-color:#fff;
+		border:1px solid #ddd;
+		line-height:40px;
+		display:none;
+	}
+  </style>
+ <script>
+	 $(()=>{
+		  $('.menu').on({
+			mouseenter:function(){
+				$(this).children().last().css('display','block');
+				console.log(this);
+			},mouseleave:function(){
+				$(this).children().last().css('display','none');
+			}
+		  });
+	});
+ </script>
+</head>
+<body>
+
+<header>
+	<div id=bg-pattern-intro><img src="bg-pattern-intro.svg"/></div>
+	<div id="Blogr"><b>Blogr</b></div>
+		
+		<div class="menu">
+		<div id="Product">Product</div>
+		<ul>
+			<li>Overview</li>
+			<li>Pricing</li>
+			<li>Marketplace</li>
+			<li>Features</li>
+			<li>Integrations</li>
+		</ul>
+		</div>
+		<div class="menu">
+		<div id="Company">Company</div>
+		<ul>
+			<li>About</li>
+			<li>Team</li>
+			<li>Blog</li>
+			<li>Careers</li>
+		</ul>
+		</div>
+		<div class="menu">
+		<div id="Connect">Connect</div>
+		<ul>
+			<li>Contact</li>
+			<li>Newsletter</li>
+			<li>LinkedIn</li>
+		</ul>
+		</div>
+	
+	<div id="Login">Login</div>
+	<div id="SignUp">Sign Up</div>
+	<p>A modern publishing platform</p>
+	<p>Grow your audience and build your online brand</p>
+	
+	<div id="Start">Start for Free</div>
+	<div id="Learn">Learn More</div>
+</header>
+
+
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	$(function(){
+		$("#hide").click(function(){
+			//				'slow','fast','normal',밀리초
+			$("img").first().hide(3000);//폭, 높이가 작아지고 점점흐려짐
+		});
+		//보여주기
+		$("#show").click(()=>{
+			$("img:first").show(3000);
+		});
+		$("#toggle").click(()=>{
+			$('img:first').toggle(3000);
+		});
+		
+		//점점흐리게, 점점진하게, 
+		$("#fadeIn").click(function(){
+			$('img:first').fadeIn(3000, function(){
+				alert("fadeIn콜백함수 실행됨");
+			});	
+		});
+		$("#fadeOut").click(function(){
+			$('img:first').fadeOut(3000);	
+		});	
+		$("#fadeToggle").click(function(){
+			$('img:first').fadeToggle(3000);	
+		});	
+		//slideUp, slideDown, slideToggle
+		$("#slideUp").on('click', ()=>{
+			$('img:first').slideUp(3000, function(){
+				console.log('slideUp실행됨');
+			})
+		});
+		$("#slideDown").on('click', ()=>{
+			$('img:first').slideDown(3000)
+		});
+		$('#slideToggle').on('click',()=>{
+			$('img').slideToggle(3000);
+		});
+		
+	});
+</script>
+</head>
+<body>
+<button id="hide">숨기기(hide)</button>
+<button id="show">보여주기(show)</button>
+<button id="toggle">hide&show</button>
+<button id="fadeIn">점점진하게</button>
+<button id="fadeOut">점점흐리게</button>
+<button id="fadeToggle">fadeIn, fadeOut</button>
+
+<button id="slideUp">점점위로</button>
+<button id="slideDown">점점아래로</button>
+<button id="slideToggle">slideUp, slideDown</button>
+<hr/>
+<img src="../img/kakao8.png"/><br/>
+<img src="../img/kakao9.png"/>
+</body>
+</html>

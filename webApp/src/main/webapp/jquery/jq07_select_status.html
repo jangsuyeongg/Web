@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	$(()=>{
+		//상태선택자
+		//속성값이 text선택하라
+		$(':text').css('background-color','pink');
+		$(':checked').prop('checked', false);
+		$(':selected').prop('selected', true);
+		
+		//컨텐츠 선택자
+		// contains(): 특정문자를 포함한 경우 선택한다.
+		$('p:contains("부산항에 입항하는")').css('background-color','pink');
+		
+		//has() : 특정태그가 포함된 경우 선택
+		$('p:has("b")').css('color','blue');
+		
+		//not() : 특정선택자를 제외한 나머지를 선택
+		$('p:not(":first")').css('border','2px solid red');
+		
+		// closest() : 조상 선택자
+		$('i').closest('body').css('border','2px dotted orange');
+		
+		//filter() :	$('p.c1')
+		$('p').filter('.c1').css('background-color','#000').css('color','yellow');
+		// contents() : 선택자가 다른 태그를 포함한 경우 선택한다.
+		$('p').contents().css('color','red').css('font-size','2em')
+		//selectedIndex : select태그의 목록에서 선택된 목록의 index를 더한다
+		$('#username').val($('#site').prop('selectedIndex'));
+	});
+</script>
+
+</head>
+<body>
+<div>
+	<p>아울러 부산항에 입항하는 <b>선박에 대해서는 집단 하선을 진행하고,</b> 하역 인부와 작업인부의 유전자증폭(PCR) 검사 증서 제시 전까지는 작업자 승선을 거부한다는 방침이다. 다만 해상노조는 사측이 전향적 안을 제시한다면 교섭을 이어가겠다는 의사다.
+	</p>
+	
+	<p class="c1">해상노조는 곧 진행될 육상노조의 파업 투표 결과를 보고 쟁의행위를 함께 진행할 예정이다. HMM 육상·해상노조는 파업투표까지는 별도로 진행하고 이후 연대투쟁에 나서기로 합의했다. 육상노조와 함께 파업할 경우, 1976년 창사 이래 첫 파업이 된다.
+	</p>
+	
+	<p class="c2">아울러 부산항에 입항하는 <i>선박에 대해서는 집단 하선을 진행하고,</i> 하역 인부와 작업인부의 유전자증폭(PCR) 검사 증서 제시 전까지는 작업자 승선을 거부한다는 방침이다. 다만 해상노조는 사측이 전향적 안을 제시한다면 교섭을 이어가겠다는 의사다.
+	</p>
+</div>
+<div>
+	<form>
+		<label>이름</label>
+		<input type="text" name="username" id="username"/><br/>
+		<label>연락처</label>
+		<input type="text" name="tel" id="tel"/><br/>
+		
+		<label>사용자 동의 여부</label>
+		<input type="radio" name="accept" value="yes" checked/>동의
+		<input type="radio" name="accept" value="no"/>동의안함<br/>
+		
+		<label>자주가는 사이트</label>
+		<select name="site" id=site>
+			<option value = "not">직접입력</option>
+			<option value = "daum">daum.net</option>
+			<option value = "nate" selected>nate.com</option>
+			<option value = "naver">naver.com</option>
+			<option value = "">google.com</option>
+		</select>
+	</form>
+</div>
+</body>
+</html>

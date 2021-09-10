@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 
+	innerfade
+	
+	https://gist.github.com/coolniikou/665255
+	
+ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="jquery.innerfade.js"></script>
+<style>
+	ul,li{
+		margin:0;
+		padding:0;
+		list-style-type: none;
+	}
+	#innerImg img{
+		width:600px;
+		height:450px;
+	}
+	div:nth-child(2){
+		width:600px;
+		height:300px;
+		background-color:#ddd;
+	}
+</style>
+</head>
+<script>
+	$(()=>{
+		//이미지에 innerfade적용하기
+		$('#innerImg').innerfade({
+			animationtype:'slide'// 'slide','fade'(기본),
+			,speed:5000 //'slow','fast','normal',밀리초
+			,timeout:5000//쇼대기 시간
+			,type:'random_start' //'random','sequence(기본)','random_start'
+		});
+		
+		$('#innerTxt').innerfade({
+			animationtype:'slide'
+			,speen:3000
+			,timeout:5000
+			,type:'random_start'
+		});
+	})
+</script>
+<body>
+<div style="height:450px">
+	<ul id="innerImg">
+		<li><a href="https://www.nate.com"><img src="../../img/kakao9.png"/></a></li>
+		<li><a href="https://www.nate.com"><img src="../../img/kakao8.png"/></a></li>
+		<li><a href="https://www.nate.com"><img src="../../img/kakao7.png"/></a></li>
+		<li><a href="https://www.nate.com"><img src="../../img/kakao6.png"/></a></li>
+		<li><a href="https://www.nate.com"><img src="../../img/kakao5.png"/></a></li>
+		<li><a href="https://www.nate.com"><img src="../../img/kakao4.png"/></a></li>
+		<li><a href="https://www.nate.com"><img src="../../img/gyu.png"/></a></li>
+		<li><a href="https://www.nate.com"><img src="../../img/suyeong.png"/></a></li>
+		<li><a href="https://www.nate.com"><img src="../../img/jisu.png"/></a></li>
+	</ul>
+</div>
+
+<!-- 텍스트를 이용한 innerfade -->
+<div>
+	<ul id="innerTxt">
+		<li>전국 곳곳에서 집단감염이 속출하는 데다 전파력이 더 강한 인도 유래 '델타형' 변이가 국내 우세종으로 자리를 잡은 터라 확진자 규모는 언제든 다시 커질 수 있다.</li>
+		<li>전국 곳곳에서 집단감염이 속출하는 데다 전파력이 더 강한 인도 유래 '델타형' 변이가 국내 우세종으로 자리를 잡은 터라 확진자 규모는 언제든 다시 커질 수 있다.</li>
+		<li>전국 곳곳에서 집단감염이 속출하는 데다 전파력이 더 강한 인도 유래 '델타형' 변이가 국내 우세종으로 자리를 잡은 터라 확진자 규모는 언제든 다시 커질 수 있다.</li>
+		<li>전국 곳곳에서 집단감염이 속출하는 데다 전파력이 더 강한 인도 유래 '델타형' 변이가 국내 우세종으로 자리를 잡은 터라 확진자 규모는 언제든 다시 커질 수 있다.</li>
+		<li>전국 곳곳에서 집단감염이 속출하는 데다 전파력이 더 강한 인도 유래 '델타형' 변이가 국내 우세종으로 자리를 잡은 터라 확진자 규모는 언제든 다시 커질 수 있다.</li>
+		<li>전국 곳곳에서 집단감염이 속출하는 데다 전파력이 더 강한 인도 유래 '델타형' 변이가 국내 우세종으로 자리를 잡은 터라 확진자 규모는 언제든 다시 커질 수 있다.</li>
+		<li>전국 곳곳에서 집단감염이 속출하는 데다 전파력이 더 강한 인도 유래 '델타형' 변이가 국내 우세종으로 자리를 잡은 터라 확진자 규모는 언제든 다시 커질 수 있다.</li>
+		<li>전국 곳곳에서 집단감염이 속출하는 데다 전파력이 더 강한 인도 유래 '델타형' 변이가 국내 우세종으로 자리를 잡은 터라 확진자 규모는 언제든 다시 커질 수 있다.</li>
+		<li>전국 곳곳에서 집단감염이 속출하는 데다 전파력이 더 강한 인도 유래 '델타형' 변이가 국내 우세종으로 자리를 잡은 터라 확진자 규모는 언제든 다시 커질 수 있다.</li>
+		<li>전국 곳곳에서 집단감염이 속출하는 데다 전파력이 더 강한 인도 유래 '델타형' 변이가 국내 우세종으로 자리를 잡은 터라 확진자 규모는 언제든 다시 커질 수 있다.</li>
+	</ul>
+</div>
+</body>
+</html>

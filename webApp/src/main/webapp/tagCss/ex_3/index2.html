@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    body{
+	background-color:rgb(237, 242, 248);
+	}
+	#container{
+		width:700px;
+		height:240px;
+		background-color:#fff;
+		margin:0px auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		margin-top:300px;
+	}
+	#drawers {
+		overflow: hidden;
+	}
+	#drawers>img{
+		width:300px;
+		display: flex;
+	}
+	
+	#text{
+		margin-left:30px;
+	}
+    #topText{
+    	font-size:1.2em;
+    	color:rgb(72, 84, 106);
+    	margin-bottom:15px;
+    }
+    #centerText{
+    	font-size:0.7em;
+    	border-top: solid 0.5px gray;
+  
+    }
+    #bottomText>div>img{
+    	width:50px;
+    	border-radius: 100%;	
+    }
+ 
+    #img{
+    	float:left;
+    	margin:0;
+    	padding:0;
+    }
+    #bottomText{
+    	display:flex;
+    	margin-top:15px;
+    }
+    #Michelle{
+    	color:rgb(72, 84, 106);
+    	margin-left:20px;
+    }
+    #icon{
+    	width:5px;
+    	margin-left:150px;
+    	position: relative;
+    }
+    #share{
+    	width:180px;
+		height:50px;
+		background-color:rgb(72, 84, 106);
+		border-radius: 10px;
+		display: none;
+		position: absolute;
+		top: -50px;
+		color:#fff;
+		font-size:0.7em;
+		text-align:center;
+		border-radius: 10px;
+    }
+	
+	
+  </style>
+  <script>
+  	function divIcon(){
+  		const shareBoxStyle = document.getElementById("share").style;
+  		
+			if(shareBoxStyle.display == "none"){
+				shareBoxStyle.display = "block";
+			}else{
+				shareBoxStyle.display = "none";
+			}
+  		}
+  </script>
+</head>
+<body>
+  <div id = "container">
+	<div id = "drawers"><img src="drawers.jpg"/></div>
+	<div id="text">
+		<div id="topText">
+			<b>Shift the overall look and feel by adding these wonderful 
+		  	 touches to furniture in your home</b>
+		</div>
+		 
+		<div id="centerText">
+			 Ever been in a room and felt like something was missing? Perhaps 
+		  	 it felt slightly bare and uninviting. I’ve got some simple tips 
+		  	 to help you make any room feel complete. 
+		</div>
+		<div id="bottomText">
+			<div id="img"><img src="avatar-michelle.jpg"/></div>
+			<div id="Michelle">Michelle Appleton<br/> 28 Jun 2020</div>	 
+			<div id="icon" onclick="divIcon();"> 
+				<img src="icon-share.svg">
+				<div id="share">S H A R E&nbsp;
+					<img src="icon-facebook.svg"/>&nbsp;
+					<img src="icon-twitter.svg"/>&nbsp;
+					<img src="icon-pinterest.svg"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

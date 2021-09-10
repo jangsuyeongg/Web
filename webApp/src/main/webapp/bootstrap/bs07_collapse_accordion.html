@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+	integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+	crossorigin="anonymous">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+	integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1>collapse예</h1>
+	<!-- 버튼을 클릭하면 이미지가 접혔다 펼쳤다 한는 기능 -->
+	<button class="btn btn-success" data-target="#view1"
+		data-toggle="collapse">클릭하세요</button>
+	<div id="view1" class="collapse show">
+		<img src='../img/kakao8.png' />
+	</div>
+
+	<hr />
+	<button class="btn btn-secondary" data-target="#view2"
+		data-toggle="collapse">클릭하면 내용나오기</button>
+	<div id="view2" class="collapse">2차 신속지급으로 희망회복자금 혜택을 받게 되는 소상공인은
+		1차 신속지급(약 133만4000개사)을 포함해 총 194만5000개사로 늘어났다. 매출 감소 기준 확대 등 지원 요건이
+		넓어지면서 당초 예상 인원(178만 개사)보다 많아지게 됐다. 이번에 지원하는 61만1000개사 중에는 경영위기업종이 약
+		40만개사로 가장 많다. 뒤이어 영업제한 업종이 약 18만2000개사, 집합금지 업종이 약 2만9000개사를 차지한다. 1인이
+		경영하는 다수 사업체 14만9000개사에도 이번 2차 신속지급에서 최대 4개 업체에 대해 제일 높은 금액의 2배까지 지원한다.
+		2021년 3월부터 6월 30일까지 신규로 개업한 7만7000개사도 이번 대상에 포함된다. 지난 1차 신속지급 대상에는
+		2021년 2월 말까지 개업한 업체만 들어갔었다. 이외에도 경영위기업종에 속하는 연매출액 10억원 초과 사업체 3만개사와,
+		방역조치기간 확대로 피해를 본 사업체 약 1만개사가 추가됐다.</div>
+
+	<h1>Accrdion 예</h1>
+	<div id='accordion'>
+		<div class='card'>
+			<div class="card-header" data-target='#a1' data-toggle='collapse'>아코디언적용예제1111</div>
+			<div class='collapse' id='a1'>2차 신속지급으로 희망회복자금 혜택을 받게 되는 소상공인은
+				1차 신속지급(약 133만4000개사)을 포함해 총 194만5000개사로 늘어났다. 매출 감소 기준 확대 등 지원 요건이
+				넓어지면서 당초 예상 인원(178만 개사)보다 많아지게 됐다. 이번에 지원하는 61만1000개사 중에는 경영위기업종이 약
+				40만개사로 가장 많다. 뒤이어 영업제한 업종이 약 18만2000개사, 집합금지 업종이 약 2만9000개사를 차지한다.
+				1인이 경영하는 다수 사업체 14만9000개사에도 이번 2차 신속지급에서 최대 4개 업체에 대해 제일 높은 금액의 2배까지
+				지원한다. 2021년 3월부터 6월 30일까지 신규로 개업한 7만7000개사도 이번 대상에 포함된다. 지난 1차 신속지급
+				대상에는 2021년 2월 말까지 개업한 업체만 들어갔었다. 이외에도 경영위기업종에 속하는 연매출액 10억원 초과 사업체
+				3만개사와, 방역조치기간 확대로 피해를 본 사업체 약 1만개사가 추가됐다.</div>
+		</div>
+		<div class='card'>
+			<div class="card-header" data-target='#a2' data-toggle='collapse'>아코디언 적용예제2222</div>
+			<div class='collapse' id='a2'>2차 신속지급으로 희망회복자금 혜택을 받게 되는 소상공인은 1차 신속지급(약 133만4000개사)을
+				포함해 총 194만5000개사로 늘어났다. 매출 감소 기준 확대 등 지원 요건이 넓어지면서 당초 예상 인원(178만
+				개사)보다 많아지게 됐다. 이번에 지원하는 61만1000개사 중에는 경영위기업종이 약 40만개사로 가장 많다. 뒤이어
+				영업제한 업종이 약 18만2000개사, 집합금지 업종이 약 2만9000개사를 차지한다. 1인이 경영하는 다수 사업체
+				14만9000개사에도 이번 2차 신속지급에서 최대 4개 업체에 대해 제일 높은 금액의 2배까지 지원한다. 2021년
+				3월부터 6월 30일까지 신규로 개업한 7만7000개사도 이번 대상에 포함된다. 지난 1차 신속지급 대상에는 2021년
+				2월 말까지 개업한 업체만 들어갔었다. 이외에도 경영위기업종에 속하는 연매출액 10억원 초과 사업체 3만개사와,
+				방역조치기간 확대로 피해를 본 사업체 약 1만개사가 추가됐다.</div>
+		</div>
+		<div class='card'>
+			<div class="card-header" data-target='#a3' data-toggle='collapse'>아코디언 적용예제3333</div>
+			<div class='collapse' id='a3'>2차 신속지급으로 희망회복자금 혜택을 받게 되는 소상공인은 1차 신속지급(약 133만4000개사)을
+				포함해 총 194만5000개사로 늘어났다. 매출 감소 기준 확대 등 지원 요건이 넓어지면서 당초 예상 인원(178만
+				개사)보다 많아지게 됐다. 이번에 지원하는 61만1000개사 중에는 경영위기업종이 약 40만개사로 가장 많다. 뒤이어
+				영업제한 업종이 약 18만2000개사, 집합금지 업종이 약 2만9000개사를 차지한다. 1인이 경영하는 다수 사업체
+				14만9000개사에도 이번 2차 신속지급에서 최대 4개 업체에 대해 제일 높은 금액의 2배까지 지원한다. 2021년
+				3월부터 6월 30일까지 신규로 개업한 7만7000개사도 이번 대상에 포함된다. 지난 1차 신속지급 대상에는 2021년
+				2월 말까지 개업한 업체만 들어갔었다. 이외에도 경영위기업종에 속하는 연매출액 10억원 초과 사업체 3만개사와,
+				방역조치기간 확대로 피해를 본 사업체 약 1만개사가 추가됐다.</div>
+		</div>
+	</div>
+</body>
+
+</html>

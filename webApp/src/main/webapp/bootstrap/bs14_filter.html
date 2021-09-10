@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name= "viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script>
+	$(()=>{
+		$('#myinput').keyup(function(){
+			var data = $(this).val().toLowerCase();
+			
+			$('#searchList>tr').filter(function(){
+				var trData = $(this).text().toLowerCase(); //tr에 있는 문자를 구한다.
+				var idx = trData.indexOf(data);// 없을때 -1, 있을때 0~정수
+				//				true:그냥둠, false:숨겨
+				$(this).toggle(idx>-1);
+			});
+		});
+	});
+</script>
+</head>
+<body>
+<div class='containner'>
+	<input type='text' id='myinput' placeholder='Search....' class='form-control'/>
+	<hr/>
+	<table class='table'>
+		<thead>
+		<tr>
+			<td>이름</td>
+			<td>연락처</td>
+			<td>이메일</td>
+		</tr>
+		</thead>
+		<tbody id='searchList'>	
+		<tr>
+			<td>박보검</td>
+			<td>010-1234-5789</td>
+			<td>bbg@naver.com</td>
+		</tr>
+		<tr>
+			<td>박서준</td>
+			<td>010-2222-3333</td>
+			<td>bsj@naver.com</td>
+		</tr>
+		<tr>
+			<td>송중기</td>
+			<td>010-7777-8888</td>
+			<td>sjg@naver.com</td>
+		</tr>
+		<tr>
+			<td>정해인</td>
+			<td>010-8978-5648</td>
+			<td>jhi@naver.com</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

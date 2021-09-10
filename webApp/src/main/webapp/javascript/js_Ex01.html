@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var a = "5";
+	var b = "6a";
+	var c = 5;
+	
+	document.write(isNaN(a)+", ");
+	document.write(isNaN(b)+", ");
+	document.write(isNaN(c)+"<br/>");
+	document.write(b*c+"<hr/>");
+
+	function calcu(){
+		var n1Obj = document.getElementById("num1");
+		var n2Obj = document.getElementById("num2");
+		
+		var n1 = n1Obj.value;//5
+		var n2 = n2Obj.value;
+		
+		if(!isNaN(n1) && !isNaN(n2)){	//하나만 false 여도 false 라서 밑으로 내려감.
+			var n1Int = parseInt(n1);
+			var n2Int = parseInt(n2);
+			
+			var add = n1 + n2;
+			var minus = n1 - n2;
+			var mul = n1 * n2;
+			var div = n1 / n2;
+			
+			var r = n1+"+"+ n2+"="+add+"<br/>";
+				r += n1+"-"+ n2+"="+minus+"<br/>";
+				r += n1+"*"+ n2+"="+mul+"<br/>";
+				r += n1+"/"+ n2+"="+div+"<br/>";
+				
+			document.getElementById("result").innerHTML = r;	
+			
+		}else{
+			document.getElementById("result").innerHTML = "값을 잘못입력하였습니다."	
+		}
+		//초기화
+		n1Obj.value = "";
+		n2Obj.value = "";
+	}
+</script>
+</head>
+<body>
+첫번째 수  : <input type="text" id="num1"/><br/>
+두번째 수  : <input type="text" id="num2"/><br/>
+<input type="button" value = "결과보기" onclick="calcu();"/>
+<div id="result"></div>
+</body>
+</html>

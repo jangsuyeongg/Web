@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	/*$(document).ready(function(){
+		
+	}); */
+	$(function(){
+		//선택자 : 태그, 아이디, 클래스
+		// css(): 스타일설정 함수
+		// prop 속성값이 없는 속성일떄??
+		//선택자
+		$("body").css("background-color","pink");
+		$("#userid").attr("value","goguma");
+		//$("#userid").attr("type","password");
+		$("#userid").prop("readonly", true);
+		
+		//img에게 폭, 높이, border적용
+		$("img").css('width','200px').css('height','250px').css('border','2px solid red');
+		console.log($("#userid").prop("readonly"));
+		console.log($("#userid").attr("value"));
+	});
+</script>
+
+</head>
+<body>
+<input type="text" name="userid" id="userid"/><br/>
+<img src="../img/kakao6.png"/>
+</body>
+</html>
