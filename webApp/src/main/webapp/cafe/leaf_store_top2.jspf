@@ -47,6 +47,7 @@
 		margin-left: 15px;
 	}
 	
+	
 	.title {
 		float: left;
 		height: 50px;
@@ -54,6 +55,7 @@
 		width: 20%;
 		text-align: center;
 		margin-top: 22px;
+		
 		color:rgb(0, 163, 239);
 	}
 	
@@ -62,6 +64,8 @@
 		z-index: 10;
 		background-color:white;
 		display: none;
+		width:100%;
+		height:200px;
 	}
 	
 	
@@ -75,7 +79,9 @@
 		background-image: url('./img/coffee.png'); 
 		background-size: contain;
 		background-repeat: no-repeat;
+
 	}
+
 	#star{
 		color:rgb(0, 163, 239);
 		
@@ -88,7 +94,6 @@
 		width:100%;
 		height:150px;
 	}
-
 </style>
 <script>
 
@@ -96,12 +101,14 @@
 		// 메뉴바 나오기
 		$(".title").on({
 			mouseenter : function() {
-				$(this).children('ul').css('display', 'block');
+				$(".title>ul").css('display', 'block');
 			},
 			mouseleave : function() {
-				$(this).children('ul').css('display', 'none');
+				$(".title>ul").css('display', 'none');
 			}
 		});
+	
+	
 		// 헤드에 마우스오버 -> 하얀색
 		$("#header").on({
 			mouseenter : function() {
@@ -122,10 +129,10 @@
 		});
 		$('.title').on({
 			mouseenter: function() {
-				$(this).children().css('color', 'rgb(0, 163, 239)');
+				$(this).children().css('color', 'rgb(0, 163, 239)').css('border-bottom','3px solid rgb(0, 163, 239)');
 			},
 			mouseleave: function() {
-				$(this).children().css('color', 'black');
+				$(this).children().css('color', 'black').css('border-bottom','none');
 			}
 		});
 		
@@ -147,13 +154,12 @@
 			</div>
 			
 		</div>
-		<div>
-		<ul id="menu">
+		<div id="menu">
+		<ul>
 			<li class="title"><a href="#">공지사항</a>
 				<ul>
 					<li class="menu_item"><a href="#">공지사항목록</a></li>
 					<li class="menu_item"><a href="#">공지사항쓰기</a></li>
-
 				</ul>
 			</li>
 			<li class="title"><a href="#">매출분석</a>
