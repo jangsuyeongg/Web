@@ -1,13 +1,3 @@
-SCRIPT_AREA_BORDER=\#F9F9F9 | null | null | false | null | null
-commentBorder=\#A8A8A8 | null | null | true | null | null
-commentText=\#A8A8A8 | null | null | true | null | null
 eclipse.preferences.version=1
-jsp_content=\#F9F9F9 | null | null | null | null | null
 newFileTemplateName=New JSP File (html 5)
-org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="jsp_new" deleted\="false" description\="JSP with html 5 markup" enabled\="true" id\="org.eclipse.jst.jsp.ui.templates.jsphtml5" name\="New JSP File (html 5)">&lt;%@ page language\="java" contentType\="text/html; charset\=UTF-8" pageEncoding\="UTF-8"%&gt;\r\n&lt;%@ taglib uri\="http\://java.sun.com/jsp/jstl/core" prefix\="c" %&gt;\r\n&lt;\!DOCTYPE html&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;\r\n&lt;meta charset\="UTF-8"&gt;\r\n&lt;title&gt;Insert title here&lt;/title&gt;\r\n&lt;script src\="https\://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity\="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ\=\="   crossorigin\="anonymous" referrerpolicy\="no-referrer"&gt;&lt;/script&gt;\r\n&lt;/head&gt;\r\n&lt;meta charset\="${encoding}"&gt;\r\n&lt;title&gt;Insert title here&lt;/title&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n${cursor}\r\n&lt;/body&gt;\r\n&lt;/html&gt;</template></templates>
-overriddenByCSS=,SCRIPT_AREA_BORDER,commentBorder,commentText,jsp_content,tagAttributeEquals,tagAttributeName,tagAttributeValue,tagBorder,tagName,
-tagAttributeEquals=\#F9F9F9 | null | null | null | null | null
-tagAttributeName=\#EA9C77 | null | false | false | null | null
-tagAttributeValue=\#76BA53 | null | null | false | null | null
-tagBorder=\#F9F9F9 | null | null | false | null | null
-tagName=\#03a8d8 | null | true | false | false | false
+org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="jsp_new" deleted\="false" description\="JSP with html 5 markup" enabled\="true" id\="org.eclipse.jst.jsp.ui.templates.jsphtml5" name\="New JSP File (html 5)">&lt;%@ page language\="java" contentType\="text/html; charset\=UTF-8" pageEncoding\="UTF-8"%&gt;\r\n&lt;%@ taglib uri\="http\://java.sun.com/jsp/jstl/core" prefix\="c" %&gt;\r\n&lt;\!DOCTYPE html&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;\r\n&lt;meta charset\="UTF-8"&gt;\r\n&lt;title&gt;Insert title here&lt;/title&gt;\r\n&lt;script src\="https\://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity\="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ\=\="   crossorigin\="anonymous" referrerpolicy\="no-referrer"&gt;&lt;/script&gt;\r\n&lt;/head&gt;\r\n&lt;meta charset\="${encoding}"&gt;\r\n\r\n&lt;body&gt;\r\n${cursor}\r\n&lt;/body&gt;\r\n&lt;/html&gt;</template></templates>
