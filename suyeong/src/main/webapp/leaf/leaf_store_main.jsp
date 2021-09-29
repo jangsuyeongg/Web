@@ -33,7 +33,6 @@
     height: 100vh;
     border:0;
 }
-
 /* 이솜이 파일 css */
 	#backImg{
 	    position: fixed;
@@ -56,25 +55,17 @@
 	    box-shadow: none;
 	    border: 0;
 	}
-	
 	.blank{
 	    position: relative;
 	    z-index: -2;
 	    height:750px;
 	    background-color: white;
 	    opacity: 0;
-	
-	}
-	.notice_footer{
-	    display: flex;
-	    flex-direction: column;
-	    width: 100%;
-	    height: 100vh;
-	    
 	}
 	.notice{
 	    display: flex;
 	    flex: 4 1 0;
+	    height: 580px;
 	    background-color:  #e0e5ec;
 	}
 	
@@ -103,7 +94,7 @@
 		font-size:1.5em;
 		color:rgb(0, 163, 239);
 	}
-	.noticeText_icon{
+	.noticeText_icon, .blank_text{
 		margin-left:-500px;
 	}
 	.noticeText{
@@ -246,8 +237,7 @@
 	</div>
     <div class="blank"></div>
     <span class="blank_text">PICK </span><br/><span class="blank_text">YOUR</span><br/> <span class="blank_text">FAVORITE</span>
-    <div class="notice_footer">
-        <div class="notice">
+            <div class="notice">
             <div class="noticeText_icon">
                 <div class="noticeText">NOTICE</div><br/>
                 <i class="fas fa-chalkboard"></i>
@@ -259,7 +249,6 @@
 				<button class="custom-btn btn-16">leaf&nbsp;&nbsp;서강점 폐점 2021.09.18</button>
 				</div>	
              </div>
-        </div>
       
        <!-- background -->
 	 <div id="backImg"><img src="img/main1.jpg"  alt=""></div>

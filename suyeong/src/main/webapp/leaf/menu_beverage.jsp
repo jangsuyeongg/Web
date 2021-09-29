@@ -22,7 +22,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		
 	}
 	.menu_title_container {
 		display: flex;
@@ -44,6 +43,7 @@
 		overflow: hidden;
 		border-radius: 100%;
 		margin: 30px;
+		position:relative;
 	}
 	.imgwrap:hover {
 		border:3px solid rgb(0, 163, 239);
@@ -99,75 +99,89 @@
 	.menuList{
 		display:flex;
 	}
-	
+	.new{
+		width:50px;
+		height:50px;
+		border-radius:100%;
+		background-color:rgb(0, 163, 239);
+		position:relative;
+		top: -328px;
+    	left: 43px;
+   		color:white;
+   		line-height:50px;
+	    text-align: center;
+	}
+	.best{
+		width:50px;
+		height:50px;
+		border-radius:100%;
+		background-color:rgb(89, 65, 54);
+		position:relative;
+		top: -328px;
+    	left: 43px;
+   		color:white;
+   		line-height:50px;
+	    text-align: center;
+	}
 </style>
 <script>
 $(function(){
 	$("#All").click(function(){
-		$(".latte").css('display','block');
-		$(".espresso").css('display','block');
-		$(".coffee").css('display','block');
+		$(".tea").css('display','block');
+		$(".ade").css('display','block');
+		$(".yogurt").css('display','block');
 	});
 	
-	$("#Coffee").click(function(){
-		$(".coffee").css('display','block');
-		$(".latte").css('display','none');
-		$(".espresso").css('display','none');
+	$("#Tea").click(function(){
+		$(".tea").css('display','block');
+		$(".ade").css('display','none');
+		$(".yogurt").css('display','none');
 		
 	});
-	$("#Latte").click(function(){
-		$(".latte").css('display','block');
-		$(".coffee").css('display','none');
-		$(".espresso").css('display','none');
+	$("#Ade").click(function(){
+		$(".ade").css('display','block');
+		$(".tea").css('display','none');
+		$(".yogurt").css('display','none');
 	});
-	$("#Espresso").click(function(){
-		$(".espresso").css('display','block');
-		$(".coffee").css('display','none');
-		$(".latte").css('display','none');
+	$("#Yogurt").click(function(){
+		$(".yogurt").css('display','block');
+		$(".ade").css('display','none');
+		$(".tea").css('display','none');
 	});
 	
 });
 </script>
 </head>
-<meta charset="UTF-8">
-
 <body>
-<div class="main">
-	<div class="menu_bar">
-		<ul class="menu_title_container">
-			<li id="All">All</li>
-			<li id="Coffee">Coffee</li>
-			<li id="Latte">Latte</li>
-			<li id="Espresso">Espresso</li>
-		</ul>
-	</div>
-		<ul class="menuList">
-			<li class="coffee"><a href="/suyeong/leaf/leaf_menu_detail.jsp"><div class="imgwrap"><img src="img/americano.png" id="img"/></a></div>
-				<div class="imgtext">아이스아메리카노<br/><span class="imgtext2">Iced Americano</span></div>
-			</li>
-			<li class="latte"><div class="imgwrap"><img src="img/latte.png" id="img"/></div>
-				<div class="imgtext">마키아토<br/><span class="imgtext2">Machiato</span></div>
-			</li>
-			<li class="espresso"><div class="imgwrap"><img src="img/espresso.png" id="img"/></div>
-				<div class="imgtext">에스프레소<br/><span class="imgtext2">Espresso</span></div>
-			</li>
-			<li class="latte"><div class="imgwrap"><img src="img/icecreamlatte.png" id="img"/></div>
-				<div class="imgtext">아이스크림라떼<br/><span class="imgtext2">Icecream Latte</span></div>
-			</li>
-			<li class="latte"><div class="imgwrap"><img src="img/malcha.png" id="img"/></div>
-				<div class="imgtext">아이스 제주 말차 카페 라떼<br/><span class="imgtext2">Iced Jeju Malcha Cafe Latte</span></div>
-			</li>
-			<li class="latte"><div class="imgwrap"><img src="img/latte2.png" id="img"/></div>
-				<div class="imgtext">아이스 카페라떼<br/><span class="imgtext2">Iced Cafe Latte</span></div>
-			</li>
-			<li class="latte"><div class="imgwrap"><img src="img/caramel.png" id="img"/></div>
-				<div class="imgtext">아이스 카라멜마끼야또<br/><span class="imgtext2">Iced Caramel Macchiato</span></div>
-			</li>
-			<li class="latte"><div class="imgwrap"><img src="img/Einspanner.png" id="img"/></div>
-				<div class="imgtext">제주바다 아인슈페너<br/><span class="imgtext2">Jeju Ocean Einspanner</span></div>
-			</li>
-			
-		</ul>
+	<div class="main">
+		<div class="menu_bar">
+			<ul class="menu_title_container">
+				<li id="All">All</li>
+				<li id="Tea">Tea</li>
+				<li id="Ade">Ade</li>
+				<li id="Yogurt">Yogurt</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="menuList">
+				<li class="tea"><div class="imgwrap"><a href="/suyeong/leaf/leaf_menu_detail.jsp"><img src="img/IceEarlGrey.png" id="img"/></a></div>
+					<div class="imgtext">아이스 얼그레이<br/><span class="imgtext2">Ice EarlGrey</span></div>
+				</li>
+				<li class="ade"><div class="imgwrap"><img src="img/JejuHallabongAde.png" id="img"/></div>
+					<div class="imgtext">제주 한라봉 에이드<br/><span class="imgtext2">JejuHallabongAde</span></div>
+				</li>
+				<li class="ade"><div class="imgwrap"><img src="img/MojitoAde.png" id="img"/></div>
+					<div class="imgtext">모히토 에이드<br/><span class="imgtext2">Mojito Ade.png</span></div>
+					<div class="best">best</div>
+				</li>
+				<li class="ade"><div class="imgwrap"><img src="img/PeachGrapefruitAde.png" id="img"/></div>
+					<div class="imgtext">복숭아 자몽 에이드<br/><span class="imgtext2">Peach Grape Fruit Ade</span></div>
+				</li>
+				<li class="yogurt"><div class="imgwrap"><img src="img/StrawberryYogurt.png" id="img"/></div>
+					<div class="imgtext">스트로베리 요거트<br/><span class="imgtext2">Strawberry Yogurt</span></div>
+				</li>
+			</ul>
+		</div>
 	</div>	
 </body>
 </html>

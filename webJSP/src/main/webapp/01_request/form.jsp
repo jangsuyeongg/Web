@@ -20,7 +20,7 @@
 					<input type="checkbox" name="inter" value="웹툰"/>웹툰
 					<input type="checkbox" name="inter" value="게임"/>게임
 					<input type="checkbox" name="inter" value="IT"/>IT
-					<input type="checkbox" name="inter" value="유튭"/>유튭
+					<input type="checkbox" name="inter" value="유튭"/>유튭</li>
 		<li>지역 :
 			<select name="location" multiple>
 				<option value="서울">서울</option>

@@ -27,7 +27,6 @@
 		position:fixed;
 		top:0;
 		z-index:3;
-
 	}
 	.fa-envira{
 		color:rgb(0, 163, 239);
@@ -35,7 +34,7 @@
 	}
 	
 	.topbar {
-		margin-left: 1600px;
+		margin-left: 1800px;
 		position:relative;
 		top:-60px;
 	}
@@ -51,7 +50,7 @@
 		float: left;
 		height: 50px;
 		line-height: 50px;
-		width: 10%;
+		width: 12.5%;
 		text-align: center;
 		margin-top: 22px;
 		color:rgb(0, 163, 239);
@@ -69,7 +68,8 @@
 	
 	#menu{
 		 position: relative;
-   		 top: -64px;
+   		 top: -69px;
+   		 width:100vw;
 	}
 
 	.menu_item:hover {
@@ -95,6 +95,9 @@
 	#menu{
 		width:100%;
 		height:150px;
+	}
+	.title:nth-of-type(1){
+		margin-left:550px;
 	}
 </style>
 <script>
@@ -160,18 +163,6 @@
 		</div>
 		<div id="menu">
 		<ul>
-			<li class="title hide"><a href="#">공지사항</a>
-				<ul>
-				</ul>
-			</li>
-			<li class="title hide"><a href="#">공지사항</a>
-				<ul>
-				</ul>
-			</li>
-			<li class="title hide"><a href="#">공지사항</a>
-				<ul>
-				</ul>
-			</li>
 			<li class="title"><a href="#">공지사항</a>
 				<ul>
 					<li class="menu_item"><a href="#">공지사항목록</a></li>
@@ -195,18 +186,7 @@
 					<li class="menu_item"><a href="#">재고확인</a></li>
 				</ul>
 			</li>
-			<li class="title hide"><a href="#">재고관리</a>
-				<ul>
-				</ul>
-			</li>
-			<li class="title hide"><a href="#">재고관리</a>
-				<ul>
-				</ul>
-			</li>
-			<li class="title hide"><a href="#">재고관리</a>
-				<ul>
-				</ul>
-			</li>
+			
 		</ul>
 	</div>
 	</div><!-- header -->

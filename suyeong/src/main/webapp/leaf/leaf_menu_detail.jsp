@@ -5,10 +5,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-	integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <style>
 	body{
 		margin:0px;
@@ -81,7 +78,7 @@
 	<div id="left_content">
 		<div class= "content_1">Iced Americano</div><br/>
 		<div class= "content_2">  아이스아메리카노</div><br/>
-		<div class= "content_3">LEAF 시그니처 블렌드로 추출한 에스프레소로 만든 부드럽고 깔끔한 가장 대중적인 커피 메뉴입니다.</span>
+		<div class= "content_3">LEAF 시그니처 블렌드로 추출한 에스프레소로 만든 부드럽고 깔끔한 가장 대중적인 커피 메뉴입니다.
 		<br/><br/><br/><br/><br/>
 		구분 : Ice <br/><br/>
 		제공사이즈 : Standard
@@ -92,7 +89,7 @@
 	<i class="fas fa-flask"></i>
 	<!-- <i class="fas fa-mug-hot"></i> -->
 		<div class= "content_4"> 영양 정보 </div><br/>
-		<div class= "content_5">1회제공량기준</div><br/>
+		<div class= "content_5">1회제공량기준 standard</div><br/>
 		<div class= "content_6">제공량(ml) <span> 360 </span>
 			<hr/><br/>열량(kcal)  <span> 10 </span> 당류(g) <span> 10 </span><br/><br/>
 					  나트륨(mg)  <span> 10 </span> 단백질(g) 	<span> 1 </span><br/><br/>
