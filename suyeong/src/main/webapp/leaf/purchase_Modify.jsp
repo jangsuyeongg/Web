@@ -10,9 +10,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <style>
 	.container{
-		border:1px solid gray; 
 		max-width: 1400px;
 		height:855px;
+		background-color:rgb(245, 240, 233);
 	}
 
 	.purchase_state{
@@ -39,15 +39,26 @@
 	.purchase_ok{
 		margin-top:20px;
 		overflow:scroll;
-		height:530px;
+		height: 516px;
 	}
 	#name{
 		font-size:1.5em;
 		font-weight:bold;
 		margin:10px;
+		line-height: 3;
 	}
 	.purchase_ok{
 		overflow:scroll;
+	}
+	.btn3{
+		background-color: rgb(30, 57, 50);
+	    width: 56px;
+    	height: 30px;
+	    border-radius: 3px;
+	    color: white;
+	}
+	textarea{
+		resize:none;
 	}
 </style>
 </head>
@@ -103,8 +114,8 @@
                	    <td>2021-09-19</td>
                	    <td>2021-09-19</td>
                	    <td>대기</td>
-	                <td><input type="submit" class='btn btn-warning btn-sm' value="수정"/></td>
-               	    <td><input type="submit" class='btn btn-danger btn-sm' value="취소"/></td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
 	            </tr>
 	            <tr>
 	             	<td>1</td>
@@ -116,8 +127,8 @@
                	    <td>2021-09-19</td>
                	    <td>2021-09-19</td>
                	    <td>대기</td>
-	                <td><input type="submit" class='btn btn-warning btn-sm' value="수정"/></td>
-               	    <td><input type="submit" class='btn btn-danger btn-sm' value="취소"/></td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
 	            </tr>
 	            <tr>
 	             	<td>1</td>
@@ -129,8 +140,8 @@
                	    <td>2021-09-19</td>
                	    <td>2021-09-19</td>
                	    <td>대기</td>
-	                <td><input type="submit" class='btn btn-warning btn-sm' value="수정"/></td>
-               	    <td><input type="submit" class='btn btn-danger btn-sm' value="취소"/></td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
 	            </tr>
 	            <tr>
 	             	<td>1</td>
@@ -142,8 +153,8 @@
                	    <td>2021-09-19</td>
                	    <td>2021-09-19</td>
                	    <td>완료</td>
-	                <td><input type="submit" class='btn btn-warning btn-sm' value="수정"/></td>
-               	    <td><input type="submit" class='btn btn-danger btn-sm' value="취소"/></td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
 	            </tr>
 	            <tr>
 	             	<td>1</td>
@@ -155,8 +166,8 @@
                	    <td>2021-09-19</td>
                	    <td>2021-09-19</td>
                	    <td>완료</td>
-	                <td><input type="submit" class='btn btn-warning btn-sm' value="수정"/></td>
-               	    <td><input type="submit" class='btn btn-danger btn-sm' value="취소"/></td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
 	            </tr>
 	            <tr>
 	             	<td>1</td>
@@ -168,8 +179,8 @@
                	    <td>2021-09-19</td>
                	    <td>2021-09-19</td>
                	    <td>완료</td>
-	                <td><input type="submit" class='btn btn-warning btn-sm' value="수정"/></td>
-               	    <td><input type="submit" class='btn btn-danger btn-sm' value="취소"/></td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
 	            </tr>
 	            <tr>
 	             	<td>1</td>
@@ -181,8 +192,8 @@
                	    <td>2021-09-19</td>
                	    <td>2021-09-19</td>
                	    <td>완료</td>
-	                <td><input type="submit" class='btn btn-warning btn-sm' value="수정"/></td>
-               	    <td><input type="submit" class='btn btn-danger btn-sm' value="취소"/></td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
 	            </tr>
 	            <tr>
 	             	<td>1</td>
@@ -194,8 +205,8 @@
                	    <td>2021-09-19</td>
                	    <td>2021-09-19</td>
                	    <td>완료</td>
-	                <td><input type="submit" class='btn btn-warning btn-sm' value="수정"/></td>
-               	    <td><input type="submit" class='btn btn-danger btn-sm' value="취소"/></td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
 	            </tr>
 	            <tr>
 	             	<td>1</td>
@@ -207,8 +218,8 @@
                	    <td>2021-09-19</td>
                	    <td>2021-09-19</td>
                	    <td>완료</td>
-	                <td><input type="submit" class='btn btn-warning btn-sm' value="수정"/></td>
-               	    <td><input type="submit" class='btn btn-danger btn-sm' value="취소"/></td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
 	            </tr>
 	            <tr>
 	             	<td>1</td>
@@ -220,8 +231,21 @@
                	    <td>2021-09-19</td>
                	    <td>2021-09-19</td>
                	    <td>완료</td>
-	                <td><input type="submit" class='btn btn-warning btn-sm' value="수정"/></td>
-               	    <td><input type="submit" class='btn btn-danger btn-sm' value="취소"/></td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
+	            </tr>
+	            <tr>
+	             	<td>1</td>
+	               	<td>2-1</td>
+	                <td>블랙원두</td>
+	                <td>10000원</td>
+	                <td><input type="text" class="text"/>개</td>
+	                <td>50000</td>
+               	    <td>2021-09-19</td>
+               	    <td>2021-09-19</td>
+               	    <td>완료</td>
+	                <td><input type="submit" class='btn3' value="수정"/></td>
+               	    <td><input type="submit" class='btn3' value="취소"/></td>
 	            </tr>
 	         </tbody>
 	      </table>

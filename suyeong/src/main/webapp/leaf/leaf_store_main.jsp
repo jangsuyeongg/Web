@@ -58,14 +58,14 @@
 	.blank{
 	    position: relative;
 	    z-index: -2;
-	    height:750px;
+	    height:20vh;
 	    background-color: white;
 	    opacity: 0;
 	}
 	.notice{
 	    display: flex;
 	    flex: 4 1 0;
-	    height: 580px;
+	    height: 800px;
 	    background-color:  #e0e5ec;
 	}
 	
@@ -106,14 +106,24 @@
 		margin-left:40px;
 		margin-top:-80px;
 	}
-	.blank_text{
+	.blank_text1,.blank_text2,.blank_text3{
 		position: relative;
 	    z-index: 0;
-	    top:-500px;
 	    color:white;
-	    font-size:5em;
+	    font-size:6em;
 	    font-weight:bold;
+	    margin-left:-500px;
 	}
+	.fav_img{
+		background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2021/2021_autumn_fav.png);
+	    top: -409px;
+	    left: 1000;
+	    right: -10px;
+	    width: 672px;
+	    height: 458px;
+	    position: relative;
+	}
+	
 	
 	/*notice 버튼 css*/
 	.frame {
@@ -177,6 +187,7 @@
 	.btn-16:active {
 	  top: 2px;
 	}
+	
 
 </style>
 <script>
@@ -203,7 +214,13 @@
 			 	$('.noticeText_icon').animate({marginLeft:'500px'},6000,'easeOutQuart');
 			 }
 			 if(window.scrollY > 700) {
-				 	$('.blank_text').animate({marginLeft:'400px'},6000,'easeOutQuart');
+				 	$('.blank_text1').animate({marginLeft:'400px'},4000,'easeOutQuart');
+				 }
+			 if(window.scrollY > 700) {
+				 	$('.blank_text2').animate({marginLeft:'400px'},5000,'easeOutQuart');
+				 }
+			 if(window.scrollY > 700) {
+				 	$('.blank_text3').animate({marginLeft:'400px'},6000,'easeOutQuart');
 				 }
 		 });
 	});
@@ -236,7 +253,8 @@
 		</ul>
 	</div>
     <div class="blank"></div>
-    <span class="blank_text">PICK </span><br/><span class="blank_text">YOUR</span><br/> <span class="blank_text">FAVORITE</span>
+    <span class="blank_text1">PICK </span><br/><span class="blank_text2">YOUR</span><br/> <span class="blank_text3">FAVORITE</span>
+    <div class="fav_img"></div>
             <div class="notice">
             <div class="noticeText_icon">
                 <div class="noticeText">NOTICE</div><br/>

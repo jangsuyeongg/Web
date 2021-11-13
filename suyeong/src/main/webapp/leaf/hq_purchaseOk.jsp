@@ -9,15 +9,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <style>
-	.container{
-		border:1px solid gray; 
+	.container{ 
 		max-width: 1400px;
 		height:855px;
+		background-color:rgb(245, 240, 233);
 	}
 	.purchase_ok{
 		width: 100%;
 		height:400px;
-		border:1px solid gray;
 		display:flex;
 		margin-left:10px; 
 		margin-top:5px;
@@ -35,8 +34,8 @@
 	#name{
 		font-size:1.5em;
 		font-weight:bold;
-		margin-top:50px;
 		text-align:center;
+		line-height: 3;
 	}
 	#memo{
 		height:200px;

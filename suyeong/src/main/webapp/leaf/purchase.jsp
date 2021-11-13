@@ -9,45 +9,40 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <style>
-	.main{
-		border:1px solid gray; 
+	.main{ 
 		max-width: 1400px;
 		margin:0 auto;
 		overflow:auto;
+		background-color:rgb(245, 240, 233);
 	}
 	.search{
 		width:400px;
 		height:586px;
-		border:1px solid gray; 
 		float:left;
+		margin-left:10px;
 		margin-right:10px;
-		margin-top:5px; 
 	}
 	.partner{
 		width:400px;
-		border:1px solid gray; 
 		float:left;
-		margin-right:10px; 
-		margin-top:5px;
+		margin:10px; 
 	}
 	.search_partner{
 		width:400px;
 	}
 	.purchase{
-		width: 958px;
+		width: 965px;
 		height:400px;
-		border:1px solid gray;
 		display:flex;
-		margin-left:10px; 
-		margin-top:5px;
+		margin:10px; 
+		
 	}
 	.purchase_ok{
-		width: 958px;
+		width: 965px;
 		height:400px;
-		border:1px solid gray;
 		display:flex;
-		margin-left:10px; 
-		margin-top:5px;
+		margin:10px; 
+		
 	}
 	.text{
 		width:100px;
@@ -67,7 +62,25 @@
 	#name{
 		font-size:1.5em;
 		font-weight:bold;
-		margin-top:10px;
+		margin:10px;
+	}
+	#btn1,#btn2{
+		background-color: rgb(30, 57, 50);
+	    width: 80px;
+	    height: 35px;
+	    border-radius: 3px;
+	    font-size: 0.6em;
+	    color: white;
+	}
+	.btn3{
+		background-color: rgb(30, 57, 50);
+	    width: 56px;
+    	height: 30px;
+	    border-radius: 3px;
+	    color: white;
+	}
+	textarea{
+		resize:none;
 	}
 </style>
 <script>
@@ -92,8 +105,8 @@ $(()=>{
 </head>
 <body>
 <div class="main">
-	<div id="name">발주관리  <a href="/suyeong/leaf/purchase_Modify.jsp"><input type="submit" class='btn btn-warning btn-sm' value="수정" id="btn1"/></a>
-				<input type="submit" class='btn btn-danger btn-sm' value="취소"/></div>
+	<div id="name">발주관리  <a href="/suyeong/leaf/purchase_Modify.jsp"><input type="submit" value="수정하기" id="btn1"/></a>
+				<input type="submit" value="취소하기" id="btn2"/></div>
 	<div class="search_partner">
 	<div class="search">
 		<input type='text' id='myinput' placeholder='원하시는 상품을 검색하세요.' class='form-control'/>
@@ -207,7 +220,7 @@ $(()=>{
                <td>블랙원두</td>
                <td>10000원</td>
                <td><input type="text" class="text"/>개</td>
-               <td><input type="submit" class='btn btn-info btn-sm' value="발주"/></td>
+               <td><input type="submit" class='btn3' value="발주"/></td>
                <td><input type="text" class="text"/></td>
             </tr>
              <tr>
@@ -215,7 +228,7 @@ $(()=>{
                <td>블랙원두</td>
                <td>10000원</td>
                <td><input type="text" class="text"/>개</td>
-               <td><input type="submit" class='btn btn-info btn-sm' value="발주"/></td>
+               <td><input type="submit" class='btn3' value="발주"/></td>
                <td><input type="text" class="text"/></td>
             </tr>
             <tr>
@@ -223,7 +236,7 @@ $(()=>{
                <td>블랙원두</td>
                <td>10000원</td>
                <td><input type="text" class="text"/>개</td>
-               <td><input type="submit" class='btn btn-info btn-sm' value="발주"/></td>
+               <td><input type="submit" class='btn3' value="발주"/></td>
                <td><input type="text" class="text"/></td>
             </tr>
             <tr>
@@ -231,7 +244,7 @@ $(()=>{
                <td>블랙원두</td>
                <td>10000원</td>
                <td><input type="text" class="text"/>개</td>
-               <td><input type="submit" class='btn btn-info btn-sm' value="발주"/></td>
+               <td><input type="submit" class='btn3' value="발주"/></td>
                <td><input type="text" class="text"/></td>
             </tr>
             <tr>
@@ -239,7 +252,7 @@ $(()=>{
                <td>블랙원두</td>
                <td>10000원</td>
                <td><input type="text" class="text"/>개</td>
-               <td><input type="submit" class='btn btn-info btn-sm' value="발주"/></td>
+               <td><input type="submit" class='btn3' value="발주"/></td>
                <td><input type="text" class="text"/></td>
             </tr>
          </tbody>

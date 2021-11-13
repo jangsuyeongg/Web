@@ -123,6 +123,16 @@
    		line-height:50px;
 	    text-align: center;
 	}
+   ul,li{list-style-type: none;padding:0;margin:0;}
+   #img1{width:100%;height:250px;}
+   header{height:250px;position:relative;}
+   #headerText{top:-100px;font-size:3em;color:white;z-index:100;opacity:0.5;text-align:center;position: relative;}
+   nav{display:flex;justify-content:center;width:100%;border-bottom:1px solid gray;}
+   nav>div{padding:15px 40px;}
+	#img1{
+		background-image:url(https://www.baristapaulbassett.co.kr/images/menu/subVisual_coffee.jpg);
+		z-index:-1;
+	}
 </style>
 <script>
 $(function(){
@@ -149,11 +159,19 @@ $(function(){
 		$(".latte").css('display','none');
 	});
 	
+	$("#headerText").animate({
+	       top: "-160px", opacity:1
+	       }, 1200,);
+	
 });
 </script>
 </head>
 <body>
-	<div class="main">
+	<header>
+		<div id="img1"></div>
+		   <div id="headerText">COFFEE</div>
+	</header>
+	<div class="main">		
 		<div class="menu_bar">
 			<ul class="menu_title_container">
 				<li id="All">All</li>
